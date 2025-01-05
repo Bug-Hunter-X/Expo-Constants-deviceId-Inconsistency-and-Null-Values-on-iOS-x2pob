@@ -1,0 +1,1 @@
+This bug occurs when using Expo's `Constants.deviceId` to uniquely identify a user's device.  It may return inconsistent or null values across sessions or even within the same session if the app is restarted or backgrounded, especially on iOS.  This renders it unreliable for crucial user identification or data persistence schemes that depend on a stable, consistent device ID.
